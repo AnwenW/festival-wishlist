@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    
+    <title>TGE 2019 wishlist</title>
+    <meta name="description" content="Share tips for The Great Escape!">
+    <script src="/client.js" defer></script>
+    <link id="favicon" rel="icon" href="https://cdn.glitch.com/3fe6a581-c4fb-46b0-80cc-31ddef068364%2FTGE19-wheel-favicon-75.png?1555261523872" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,800,900" rel="stylesheet">
+    
+  </head>
+  
+  <body>
+    
+    <header>
+
+      <a href="http://greatescapefestival.com/" target="_blank">
+        <div class="tge-image">
+          <h1>
+            <span class="image-title">The Great<br>Escape</span><br>
+            <span class="image-subtitle">2019</span>
+          </h1>
+          <img class="wheel" src="https://cdn.glitch.com/3fe6a581-c4fb-46b0-80cc-31ddef068364%2FTGE19-wheel-image.svg?1555259409329">
+        </div>
+      </a>
+
+      <div class="titlebox" id="pageTop">
+        <h2>Wishlist</h2>
+      </div>
+
+    </header>
+
+    <main>
+      
+      <p class="bolder">What do you fancy at The Great Escape? Let's build a group wishlist to share tips!</p>
+      
+      <input id="display-toggle" type="checkbox">
+      <div id="hidden-content">
+        <p class="note"><span class="redtext">! </span>WISHLIST only works on newer browsers. If you can't see the table of bands below, please update your browser/ OS or try viewing on another device.</p>
+       
+        <hr>
+        <p>Share with friends and add your TGE tips to the list below, or 'vote' for what's already been suggested. Those with most votes might be worth a listen!</p>
+        <p>You can remove anything you add by mistake, though please don't <span class="strike">be a music snob</span> remove others' entries that you disapprove of!</p>
+        
+        <hr>
+        <p class="note">This list maker is a sample copy of the one I created for myself and friends. Feel free to try it out or <a href="https://glitch.com/edit/#!/remix/festival-tips">remix it in Glitch</a> and start your own wishlist!</p>
+        <p class="note">I'm learning to code so built this for practice. It ain't perfect so <span id="toFooter">let me know</span> what needs fixing... and if you can help me, even better :)</p>
+        
+      </div>
+
+      <label id="display-button" class="bolder" for="display-toggle"><span>Read more...</span></label>
+      <label id="hide-button" class="bolder" for="display-toggle"><span>↑ Read less</span></label>
+
+      <div class="centerform">
+        <form id="wishlist">
+          <input name="name" type="text" maxlength="40" placeholder="WHAT'S YOUR TIP?*" required>
+          <input name="description" type="text" maxlength="60" placeholder="NOTES/ SOUNDS LIKE...">
+          
+          <div class="day-picker">
+            
+            <p>WHEN ARE THEY PLAYING?</p>
+            
+            <fieldset>
+              
+              <label class="checkbox-container">Thursday
+                <input type="checkbox" name="date[]" value="Thursday" class="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label class="checkbox-container">Friday
+                <input type="checkbox" name="date[]" value="Friday" class="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label class="checkbox-container">Saturday
+                <input type="checkbox" name="date[]" value="Saturday" class="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              
+            </fieldset>
+            
+          </div> <!-- closes day-picker -->
+          
+          <button class="submit-tip" type="submit">Add to list</button>
+        </form>
+      </div> <!-- closes centerform -->
+  
+    </main>
+    
+    <section class="dreams-table">
+      
+      <p><button class="sortbutton" onclick="sortTable(0, 'bandnames')">Sort A–Z</button>//<button class="sortbutton" onclick="sortTable(1, 'ratings')">Top rated</button></p>
+      
+      
+      <div class="tab">
+        <button class="dayFilter" onclick="filter('allDays')">All</button>
+        <button class="dayFilter" onclick="filter('Thursday')">Thu</button>
+        <button class="dayFilter" onclick="filter('Friday')">Fri</button>
+        <button class="dayFilter" onclick="filter('Saturday')">Sat</button>
+      </div> <!-- closes 'tab' -->
+
+      <table id="dreams" cellspacing="0"></table>
+      
+    </section>
+    
+    
+    <footer>
+      
+      <p>Get in touch!</p>
+      <p><img class="socialicon" src="https://cdn.glitch.com/95ece675-c816-493d-a2ca-c05ad509468f%2FTwitter-icon-outline-dbl-100px.png?1521735366390" height="18px"><a href="https://twitter.com/hello_anwen">Twitter </a> &nbsp;//&nbsp; <img class="socialicon" src="https://cdn.glitch.com/95ece675-c816-493d-a2ca-c05ad509468f%2Finstagram-logo-yellow-100px.png?1521578219402" height="18px"><a href="https://www.instagram.com/hello_anwen/">Instagram </a></p>
+      <p id="contact">Back to top ↑</p>
+      <p class="footnote"><a href="https://glitch.com/edit/#!/remix/festival-tips">Remix this at glitch.com</a></p>
+      
+    </footer>
+    
+  </body>
+  
+</html>
+
+
+   
+    
+ 
