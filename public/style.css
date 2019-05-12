@@ -1,0 +1,690 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1e2228;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  font-size: 16px;
+}
+
+header {
+  background-color: #ff3051;
+  width: 100%;
+}
+
+main {
+  width: 100%;
+  padding: 0 20px;
+  margin: 40px auto 0;
+  text-align: center;
+}
+
+@media only screen and (min-width: 736px) {
+  main {
+      width: 80%;
+  }
+}
+
+/* ///////// SPINNING WHEEL IMAGE //////// */
+
+.tge-image {
+  background: url(https://cdn.glitch.com/3fe6a581-c4fb-46b0-80cc-31ddef068364%2FTGE19-header-bg-full.jpg?1555261516963);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 170px;
+  position: relative;
+  overflow: hidden;
+}
+  
+.wheel {
+  -moz-animation: spin 100s infinite linear;
+  -webkit-animation: spin 100s infinite linear;
+  animation: spin 100s infinite linear;
+  width: 200vw;
+  position: absolute;
+  left: -50vw;
+  top: -74vw;
+  -moz-transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
+@keyframes spin {
+  0% {
+  -moz-transform:rotate(0deg);
+  -webkit-transform:rotate(0deg);
+  transform:rotate(0deg);
+  }
+  100% {
+  -moz-transform:rotate(360deg);
+  -webkit-transform:rotate(360deg);
+  transform:rotate(360deg);
+  }
+}
+
+/* ////////  SPINNING WHEEL POSITION FOR DIFFERENT SCREEN WIDTHS  //////// */
+
+@media only screen and (min-width: 410px) {
+  .wheel {
+      top: -76vw;
+  }
+}
+
+@media only screen and (min-width: 465px) {
+  .wheel {
+      top: -78vw;
+  }
+}
+
+@media only screen and (min-width: 520px) {
+  .wheel {
+      top: -80vw;
+  }
+}
+
+@media only screen and (min-width: 575px) {
+  .wheel {
+      top: -82vw;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .wheel {
+      top: -84vw;
+  }
+}
+
+@media only screen and (min-width: 740px) {
+  .wheel {
+      top: -85.5vw;
+  }
+}
+
+@media only screen and (min-width: 840px) {
+  .wheel {
+      top: -87vw;
+  }
+}
+
+@media only screen and (min-width: 940px) {
+  .wheel {
+      top: -88vw;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  .wheel {
+      top: -89.5vw;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  .wheel {
+      top: -91vw;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .wheel {
+      top: -92vw;
+  }
+}
+
+@media only screen and (min-width: 1720px) {
+  .wheel {
+      top: -93vw;
+  }
+}
+
+/* ///////// */
+
+h1 {
+  text-transform: uppercase;
+  color: white;
+  width: 80%;
+  height: 80%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 41%;
+  left: 50%;
+  z-index: 1;
+}
+
+.image-title {
+  font-size: 2.6rem;
+  line-height: 1rem;
+  font-weight: 900;
+} 
+
+.image-subtitle {
+  font-size: 2rem;
+  line-height: 1rem;
+  font-weight: 800;
+} 
+
+@media only screen and (max-width: 320px) {
+  .image-title {
+    font-size: 2.4rem;
+    line-height: 0.9rem;
+  } 
+  .image-subtitle {
+  font-size: 1.9rem;
+  line-height: 0.9rem;
+  }
+}  
+
+.titlebox {
+  background-color: #ffffff;
+  width: 190px;
+  text-align: center;
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+} 
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #000000;
+  margin: 7px auto;
+}
+
+p {
+  color: white;
+  letter-spacing: 1px;
+}
+
+p a {
+  color: #FDB32D;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+p a:hover {
+  color: #00aeb5;
+}
+
+@media (hover: none) {
+  p a:hover {
+    color: #FDB32D;
+  }
+}
+
+#toFooter, #contact {
+  color: #FDB32D;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+#contact {
+  padding: 5px 0 17px;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+#toFooter:hover, #contact:hover {
+  color: #00aeb5;
+  cursor: pointer;
+}
+
+@media (hover: none) {
+  #toFooter:hover, #contact:hover {
+    color: #FDB32D;
+    text-decoration: underline;
+  }
+} 
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: white;
+}
+
+.strike {
+  text-decoration: line-through;
+} 
+
+.bolder {
+  font-weight: 500;
+  font-size: 1em;
+}
+
+.note {
+  font-style: italic;
+}
+
+.redtext {
+  color: #ff3051;
+  font-weight: 500;
+  font-size: 1.8em;
+}
+
+/* /////////  READ MORE/LESS  //////// */
+
+label#display-toggle {
+  display: block;
+}
+
+#hide-button, #display-button {
+  letter-spacing: 1px;
+  color: #FDB32D;
+  cursor: pointer;
+}
+
+/* transition to text hidden */
+#hidden-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out, border 0.2s ease-in-out, margin-bottom 0.3s ease-in-out;
+  border: 1px solid rgba(255, 255, 255, 0);
+  margin-bottom: 0;
+  padding: 0 15px;
+}
+
+#hidden-content p {
+  text-align: left;
+  line-height: 1.5em;
+  font-size: 0.9em;
+}
+
+input#display-toggle,
+label#hide-button {
+  display: none;
+}
+
+input#display-toggle:checked ~ label#display-button {
+  display: none;
+}
+
+input#display-toggle:checked ~ label#hide-button {
+  display: block;
+}
+
+/* transition to text showing */
+input#display-toggle:checked ~ #hidden-content {
+  max-height: 1000px;
+  display: block;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out, border 0.3s ease-in-out, margin-bottom 0.3s ease-in-out;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  margin-bottom: 15px;
+}
+
+/* /////////  INPUT FORM  ///////// */
+
+.centerform {
+  text-align: center;
+}
+
+form {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #00AEB5;
+  display: inline-block;
+  width: 100%;
+  max-width: 380px;
+}
+
+input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+}
+
+input::placeholder {
+  color: #606060;
+}
+
+.submit-tip {
+  display: block;
+  float: right;
+} 
+
+
+
+/* //////  CHECKBOXES TO FILTER TABLE ROWS  /////// */
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+/* //////  'DAY-PICKER' CHECKBOXES  ////// */
+
+.day-picker {
+  background-color: #ffffff;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+} 
+
+.day-picker p {
+  color: #000000;
+  font-weight: 500;
+  margin: 0 0 7px 0;
+  letter-spacing: 0;
+}
+
+.checkbox-container {
+  display: inline-block;
+  position: relative;
+  padding: 0 5px 7px 25px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* actual checkbox not visible */
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* replace checkbox with styled span */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: #ddd;
+  border: 0.5px solid #bbb;
+}
+
+/* checkmark indicator (default hidden) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* hover box background colour */
+.checkbox-container:hover input ~ .checkmark {
+  background-color: #bbb;
+}
+
+/* checkbox checked, add dark background */
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #3f3d3e;
+}
+
+/* show checkmark when checked */
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* style checkmark indicator */
+.checkbox-container .checkmark:after {
+  left: 5px;
+  top: 1px;
+  width: 4px;
+  height: 9px;
+  border: solid #ffffff;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+
+
+
+/* //////// BUTTONS //////// */
+
+button {
+  padding: 10px 7px;
+  font-size: 13.5px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.submit-tip {
+  width: 110px;
+  padding: 5px 7px;
+  background-color: #FDB32D;
+  border: 1px solid #138589;
+  color: #1e2228;
+  margin: 0;
+} 
+
+.sortbutton {
+  width: 103px;
+  padding: 5px 5px 0 0;
+  background-color: #1e2228;
+  color: #FDB32D;
+  margin: 0 0 0 8px;
+  font-size: 14px;
+} 
+
+.sortbutton:hover {
+  background-color: #1e2228;
+  color: #00aeb5;
+  transition: all 0.2s ease-in-out;
+}
+
+.sortbutton:focus {
+  color: #00aeb5;
+}
+
+.tableButtons {
+  width: 21%;
+  text-align: center;
+  padding: 5px;
+} 
+
+.vote, .remove{
+  width: 80px;
+  color: white;
+  margin: 5px;
+}
+
+.vote {
+  background-color: #00aeb5;
+}
+
+.remove {
+  background-color: #e83668;
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
+.canhover:hover {
+  background-color: #7A807C;
+  transition: all 0.2s ease-in-out;
+}
+
+.canhover:focus {
+  background-color: #7A807C;
+}
+
+
+
+
+/* /////// TABLE TABS  /////// */
+
+
+.tab {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: fit-content;
+  padding-right: 8px;
+}
+
+.tab button {
+  background-color: #ffffff;
+  border: none;
+  float: left;
+  padding: 14px 16px;
+  font-size: 16px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #bbb;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Create an active/current tablink class */
+.tab button:active {
+  background-color: #00aeb5;
+}
+
+.tab button:focus {
+  background-color: #00aeb5;
+}
+
+
+
+
+/* ///////  TABLE  /////// */
+
+.dreams-table {
+  width:100%;
+  margin: 0 auto;
+} 
+
+table {
+  width: 100%;
+  font-weight: 500;
+  border-spacing: 0;
+  border-collapse: collapse;
+  border-top: 5px solid #00aeb5;
+} 
+
+@media only screen and (min-width: 800px) {
+  .dreams-table {
+      width: 90%;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .dreams-table {
+      width: 85%;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .dreams-table {
+      width: 70%;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .dreams-table {
+      width: 62%;
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  .dreams-table {
+      width: 55%;
+  }
+}
+
+tr {
+  background-color: white;
+}
+
+/* tr:nth-child(even) {
+  background-color: #f2f2f2;
+} */
+
+td, th {
+  font-size: 12.5px;
+  border: 1px dotted #3e3f3d;
+}
+
+.dream-count {
+  width: 55px;
+  text-align: center;
+  color: black;
+}
+
+.dream-description, .dream-name {
+  font-weight: 500;
+  letter-spacing: 0;
+  margin: 0;
+} 
+
+.dream-name {
+  text-transform: capitalize;
+  color: black;
+  font-size: 13.5px;
+  padding: 7px 0;
+}
+
+.dream-description {
+  color: #03a2a8;
+  font-size: 12.5px;
+  padding: 0 0 7px 10px;
+} 
+
+.dream-description:first-letter { 
+  text-transform: uppercase; 
+}
+
+.dream-info {
+  padding: 5px 15px;
+} 
+
+.emptyP {
+  padding: 0;
+} 
+
+@keyframes votecolor {
+  0%   { 
+    color: rgba(0, 0, 0, 1);
+  }
+  20%   { 
+    color: rgba(255, 48, 81, 1); 
+    font-weight: bold;
+    font-size: 17px;
+  }
+  100% { 
+    color: rgba(255, 48, 81, 0.3); 
+  }
+}
+
+.voteeffect {
+  animation: votecolor 0.5s;
+  animation-iteration-count: 1;
+} 
+
+
+/* /////// FOOTER /////// */
+
+footer {
+  height: 190px;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 25px;
+  border-top: 1px solid white;
+  text-align: center;
+  line-height: 0.5em;
+}
+
+.socialicon {
+  vertical-align: middle;
+  margin-right: 7px;
+} 
+
+.footnote a{
+  font-size: 0.8em;
+  padding: 7px 10px;
+  border: 1px solid white;
+  text-transform: uppercase;
+}  
